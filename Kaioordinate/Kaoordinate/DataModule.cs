@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Windows.Forms;
 
 namespace Kaoordinate
 {
@@ -18,11 +12,6 @@ namespace Kaoordinate
         public DataTable dtWhanau;
         public DataTable dtLocation;
         public DataTable dtEventRegistration;
-        public DataView KaiView;
-        public DataView EventView;
-        public DataView WhanauView;
-        public DataView LocationView; // Changed from DataTable to DataView for consistency
-        public DataView EventRegistrationView;
 
         public DataModule()
         {
@@ -42,36 +31,50 @@ namespace Kaoordinate
             dtEventRegistration = dsKaioordinate.Tables["EVENTREGISTER"];
 
             dsKaioordinate.EnforceConstraints = true;
+
+            // Ensure primary keys are set
+            if (dtKai.PrimaryKey.Length == 0)
+                dtKai.PrimaryKey = new DataColumn[] { dtKai.Columns["KaiID"] };
+            if (dtWhanau.PrimaryKey.Length == 0)
+                dtWhanau.PrimaryKey = new DataColumn[] { dtWhanau.Columns["WhanauID"] };
+            if (dtLocation.PrimaryKey.Length == 0)
+                dtLocation.PrimaryKey = new DataColumn[] { dtLocation.Columns["LocationID"] };
         }
 
-        public void UpdateKAI()
-        {
-            daKai.Update(dtKai);
-        }
+        private void DataModule_Load(object sender, EventArgs e) { }
 
-        private void DataModule_Load(object sender, EventArgs e)
+        // ================= UPDATE METHODS ===================
+        public void UpdateKai()
         {
+            try
+            {
+                // Commit any pending edits
+                if (BindingContext[dtKai] is CurrencyManager cm)
+                    cm.EndCurrentEdit();
+
+                // Auto-generate INSERT/UPDATE/DELETE commands
+                OleDbCommandBuilder cb = new OleDbCommandBuilder(daKai);
+                daKai.Update(dtKai);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kai update failed: " + ex.Message);
+            }
         }
 
         public void UpdateWhanau()
         {
             try
             {
-                // Ensure primary key is set
-                if (dtWhanau.PrimaryKey.Length == 0)
-                    dtWhanau.PrimaryKey = new DataColumn[] { dtWhanau.Columns["WhanauID"] };
-
-                // Commit any pending edits from bound controls
                 if (BindingContext[dtWhanau] is CurrencyManager cm)
                     cm.EndCurrentEdit();
 
-                // Generate commands automatically
                 OleDbCommandBuilder cb = new OleDbCommandBuilder(daWhanau);
                 daWhanau.Update(dtWhanau);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Update failed: " + ex.Message);
+                MessageBox.Show("Whanau update failed: " + ex.Message);
             }
         }
 
@@ -79,21 +82,15 @@ namespace Kaoordinate
         {
             try
             {
-                // Ensure primary key is set
-                if (dtLocation.PrimaryKey.Length == 0)
-                    dtLocation.PrimaryKey = new DataColumn[] { dtLocation.Columns["LocationID"] }; // Correct column name
-
-                // Commit any pending edits from bound controls
                 if (BindingContext[dtLocation] is CurrencyManager cm)
                     cm.EndCurrentEdit();
 
-                // Generate commands automatically
-                OleDbCommandBuilder cb = new OleDbCommandBuilder(daLocation); // Must use the DataAdapter, not the DataTable
-                daLocation.Update(dtLocation); // Update through DataAdapter
+                OleDbCommandBuilder cb = new OleDbCommandBuilder(daLocation);
+                daLocation.Update(dtLocation);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Update failed: " + ex.Message);
+                MessageBox.Show("Location update failed: " + ex.Message);
             }
         }
     }
