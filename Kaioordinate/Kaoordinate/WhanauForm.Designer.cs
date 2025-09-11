@@ -124,6 +124,7 @@
             this.txtWhanauID.ReadOnly = true;
             this.txtWhanauID.Size = new System.Drawing.Size(164, 28);
             this.txtWhanauID.TabIndex = 32;
+            this.txtWhanauID.Visible = false;
             // 
             // btnReturn
             // 

@@ -21,31 +21,36 @@ namespace Kaoordinate
         public DataView KaiView;
         public DataView EventView;
         public DataView WhanauView;
-        public DataTable LocationView;
+        public DataView LocationView; // Changed from DataTable to DataView for consistency
         public DataView EventRegistrationView;
+
         public DataModule()
         {
             InitializeComponent();
             dsKaioordinate.EnforceConstraints = false;
+
             daKai.Fill(dsKaioordinate);
             daEvent.Fill(dsKaioordinate);
             daWhanau.Fill(dsKaioordinate);
             daLocation.Fill(dsKaioordinate);
             daEventRegistration.Fill(dsKaioordinate);
+
             dtKai = dsKaioordinate.Tables["KAI"];
             dtEvent = dsKaioordinate.Tables["EVENT"];
             dtWhanau = dsKaioordinate.Tables["WHANAU"];
             dtLocation = dsKaioordinate.Tables["LOCATION"];
             dtEventRegistration = dsKaioordinate.Tables["EVENTREGISTER"];
+
             dsKaioordinate.EnforceConstraints = true;
         }
-         public void UpdateKAI()
+
+        public void UpdateKAI()
         {
             daKai.Update(dtKai);
         }
+
         private void DataModule_Load(object sender, EventArgs e)
         {
-
         }
 
         public void UpdateWhanau()
@@ -70,5 +75,26 @@ namespace Kaoordinate
             }
         }
 
+        public void UpdateLocation()
+        {
+            try
+            {
+                // Ensure primary key is set
+                if (dtLocation.PrimaryKey.Length == 0)
+                    dtLocation.PrimaryKey = new DataColumn[] { dtLocation.Columns["LocationID"] }; // Correct column name
+
+                // Commit any pending edits from bound controls
+                if (BindingContext[dtLocation] is CurrencyManager cm)
+                    cm.EndCurrentEdit();
+
+                // Generate commands automatically
+                OleDbCommandBuilder cb = new OleDbCommandBuilder(daLocation); // Must use the DataAdapter, not the DataTable
+                daLocation.Update(dtLocation); // Update through DataAdapter
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Update failed: " + ex.Message);
+            }
+        }
     }
 }

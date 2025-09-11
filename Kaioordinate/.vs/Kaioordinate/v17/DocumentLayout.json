@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "C:\\Temp\\Kaioordinate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\datamodule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\kaiform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\kaiform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\datamodule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\datamodule.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "DataModule.Designer.cs",
               "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DataModule.Designer.cs",
               "RelativeDocumentMoniker": "Kaoordinate\\DataModule.Designer.cs",
@@ -59,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DataModule.cs [Design]",
               "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DataModule.cs",
               "RelativeDocumentMoniker": "Kaoordinate\\DataModule.cs",
@@ -96,33 +108,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "DataModule.cs",
               "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DataModule.cs",
               "RelativeDocumentMoniker": "Kaoordinate\\DataModule.cs",
               "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DataModule.cs",
               "RelativeToolTip": "Kaoordinate\\DataModule.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwEYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAUwGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T07:47:49.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LocationForm.cs",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\LocationForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs",
+              "RelativeToolTip": "Kaoordinate\\LocationForm.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAawNMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T16:44:48.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LocationForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\LocationForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\LocationForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T16:43:59.672Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KaiForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\KaiForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\KaiForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\KaiForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\KaiForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T16:45:23.365Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "WhanauForm.cs",
               "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\WhanauForm.cs",
               "RelativeDocumentMoniker": "Kaoordinate\\WhanauForm.cs",
               "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\WhanauForm.cs",
               "RelativeToolTip": "Kaoordinate\\WhanauForm.cs",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAkwOAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAMwFUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T07:52:14.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\Program.cs",
               "RelativeDocumentMoniker": "Kaoordinate\\Program.cs",
@@ -130,8 +179,7 @@
               "RelativeToolTip": "Kaoordinate\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T08:38:03.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T08:38:03.984Z"
             }
           ]
         }
