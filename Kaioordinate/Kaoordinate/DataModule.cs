@@ -93,5 +93,26 @@ namespace Kaoordinate
                 MessageBox.Show("Location update failed: " + ex.Message);
             }
         }
+
+
+        // ================= UPDATE EVENT ===================
+        public void UpdateEvent()
+        {
+            try
+            {
+                // Commit pending edits
+                if (BindingContext[dtEvent] is CurrencyManager cm)
+                    cm.EndCurrentEdit();
+
+                // Auto-generate INSERT/UPDATE/DELETE commands
+                OleDbCommandBuilder cb = new OleDbCommandBuilder(daEvent);
+                daEvent.Update(dtEvent);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Event update failed: " + ex.Message);
+            }
+        }
+
     }
 }

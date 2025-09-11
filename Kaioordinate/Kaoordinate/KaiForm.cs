@@ -91,17 +91,28 @@ namespace Kaoordinate
             btnUp.Enabled = false;
             btnDown.Enabled = false;
 
-            cmbEvent.Text = "";
+            // Clear bindings to avoid overwriting the selected row
+            txtKaiID.DataBindings.Clear();
+            txtKaiName.DataBindings.Clear();
+            txtPreparation.DataBindings.Clear();
+            txtPreparationTime.DataBindings.Clear();
+            txtServingQuantity.DataBindings.Clear();
+            cmbEvent.DataBindings.Clear();
+
+            // Clear input fields
+            cmbEvent.SelectedIndex = -1;
             txtKaiName.Text = "";
             txtPreparation.Text = "";
             txtPreparationTime.Text = "";
             txtServingQuantity.Text = "";
 
+            // Enable editing
             txtKaiName.ReadOnly = false; txtKaiName.Enabled = true;
             txtPreparation.ReadOnly = false; txtPreparation.Enabled = true;
             txtPreparationTime.ReadOnly = false; txtPreparationTime.Enabled = true;
             txtServingQuantity.ReadOnly = false; txtServingQuantity.Enabled = true;
 
+            // Show save/cancel buttons
             btnSave_add.Visible = true;
             btnSave_update.Visible = false;
             button1.Visible = true;
@@ -110,6 +121,7 @@ namespace Kaoordinate
             btnReturn.Enabled = false;
             btnDelete.Enabled = false;
         }
+
 
         private void btnSave_add_Click(object sender, EventArgs e)
         {
@@ -121,20 +133,30 @@ namespace Kaoordinate
                     return;
                 }
 
+                if (cmbEvent.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select an Event.", "Validation Error");
+                    return;
+                }
+
+                // Create new DataRow
                 DataRow newRow = DM.dtKai.NewRow();
-                newRow["EventID"] = Convert.ToInt32(cmbEvent.SelectedValue); // <-- dito
+                newRow["EventID"] = Convert.ToInt32(cmbEvent.SelectedValue);
                 newRow["KaiName"] = txtKaiName.Text.Trim();
                 newRow["PreparationRequired"] = txtPreparation.Text.Trim();
                 newRow["PreparationMinutes"] = txtPreparationTime.Text.Trim();
                 newRow["ServeQuantity"] = txtServingQuantity.Text.Trim();
 
-
+                // Add to DataTable
                 DM.dtKai.Rows.Add(newRow);
                 DM.UpdateKai();
 
                 MessageBox.Show("Kai added successfully.", "Success");
 
+                // Move CurrencyManager to the new row
                 currencyManager.Position = DM.dtKai.Rows.IndexOf(newRow);
+
+                // Reset form
                 ResetFormState();
             }
             catch (Exception ex)
@@ -142,6 +164,7 @@ namespace Kaoordinate
                 MessageBox.Show("Error adding Kai: " + ex.Message, "Error");
             }
         }
+
 
         // ================= UPDATE ===================
         private void btnUpdate_Click(object sender, EventArgs e)

@@ -77,6 +77,11 @@ namespace Kaoordinate
             btnUp.Enabled = false;
             btnDown.Enabled = false;
 
+            // Clear bindings to avoid updating the selected row
+            txtLocationID.DataBindings.Clear();
+            txtLocationName.DataBindings.Clear();
+            txtLocationAddress.DataBindings.Clear();
+
             // Clear input fields
             txtLocationName.Text = "";
             txtLocationAddress.Text = "";
@@ -95,6 +100,7 @@ namespace Kaoordinate
             btnDelete.Enabled = false;
         }
 
+
         private void btnSave_add_Click(object sender, EventArgs e)
         {
             try
@@ -105,18 +111,16 @@ namespace Kaoordinate
                     return;
                 }
 
-                // Add new row
                 DataRow newRow = DM.dtLocation.NewRow();
                 newRow["LocationName"] = txtLocationName.Text.Trim();
                 newRow["Address"] = txtLocationAddress.Text.Trim();
-                DM.dtLocation.Rows.Add(newRow);
 
-                // Commit to DB
+                DM.dtLocation.Rows.Add(newRow);
                 DM.UpdateLocation();
 
                 MessageBox.Show("Location added successfully.", "Success");
 
-                // Move CurrencyManager to new row without rebinding
+                // Move CurrencyManager to new row
                 currencyManager.Position = DM.dtLocation.Rows.IndexOf(newRow);
 
                 ResetFormState();
@@ -126,6 +130,7 @@ namespace Kaoordinate
                 MessageBox.Show("Error adding location: " + ex.Message, "Error");
             }
         }
+
 
         // ================= UPDATE ===================
         private void btnUpdate_Click(object sender, EventArgs e)

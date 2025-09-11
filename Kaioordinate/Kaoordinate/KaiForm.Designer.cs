@@ -54,6 +54,7 @@
             this.btnSave_add = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cmbEvent = new System.Windows.Forms.ComboBox();
+            this.iconDropDownButton1 = new FontAwesome.Sharp.IconDropDownButton();
             this.panelSave.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -346,7 +347,7 @@
             // 
             // btnSave_update
             // 
-            this.btnSave_update.Location = new System.Drawing.Point(437, 276);
+            this.btnSave_update.Location = new System.Drawing.Point(437, 247);
             this.btnSave_update.Name = "btnSave_update";
             this.btnSave_update.Size = new System.Drawing.Size(118, 23);
             this.btnSave_update.TabIndex = 43;
@@ -384,6 +385,15 @@
             this.cmbEvent.Name = "cmbEvent";
             this.cmbEvent.Size = new System.Drawing.Size(165, 21);
             this.cmbEvent.TabIndex = 56;
+            // 
+            // iconDropDownButton1
+            // 
+            this.iconDropDownButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconDropDownButton1.IconColor = System.Drawing.Color.Black;
+            this.iconDropDownButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconDropDownButton1.Name = "iconDropDownButton1";
+            this.iconDropDownButton1.Size = new System.Drawing.Size(23, 23);
+            this.iconDropDownButton1.Text = "iconDropDownButton1";
             // 
             // KaiForm
             // 
@@ -452,5 +462,6 @@
         private System.Windows.Forms.Button btnSave_add;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cmbEvent;
+        private FontAwesome.Sharp.IconDropDownButton iconDropDownButton1;
     }
 }
