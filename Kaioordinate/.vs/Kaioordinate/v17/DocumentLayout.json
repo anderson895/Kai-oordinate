@@ -1,0 +1,363 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Temp\\Kaioordinate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaoordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaoordinate.csproj|solutionrelative:kaoordinate\\whanauform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\kaiform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\kaiform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\kaiform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\kaiform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\datamodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaoordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaoordinate.csproj|solutionrelative:kaoordinate\\locationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|c:\\temp\\kaioordinate\\kaoordinate\\dskaioordinate.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\dskaioordinate.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\printform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaioordinate.csproj|solutionrelative:kaoordinate\\printform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaoordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\printform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaoordinate.csproj|solutionrelative:kaoordinate\\printform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaoordinate.csproj|C:\\Temp\\Kaioordinate\\kaoordinate\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{691B4CF6-734E-4DC9-8EC5-09B41474B8E6}|Kaoordinate\\Kaoordinate.csproj|solutionrelative:kaoordinate\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LocationForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\LocationForm.cs",
+              "ToolTip": "C:\\Temp\\Kaoordinate\\Kaoordinate\\LocationForm.cs [Design]",
+              "RelativeToolTip": "..\\Kaoordinate\\Kaoordinate\\LocationForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:23:28.504Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WhanauForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\WhanauForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\WhanauForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\WhanauForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\WhanauForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T11:03:13.391Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LocationForm.cs",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\LocationForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs",
+              "RelativeToolTip": "Kaoordinate\\LocationForm.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAUwIYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T11:02:46.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WhanauForm.cs",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\WhanauForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\WhanauForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\WhanauForm.cs",
+              "RelativeToolTip": "Kaoordinate\\WhanauForm.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAqwJkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T07:52:14.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LocationForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\LocationForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\LocationForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\LocationForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:38:06.35Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WhanauForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\WhanauForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\WhanauForm.cs",
+              "ToolTip": "C:\\Temp\\Kaoordinate\\Kaoordinate\\WhanauForm.cs [Design]",
+              "RelativeToolTip": "..\\Kaoordinate\\Kaoordinate\\WhanauForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:23:33.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\RegisterForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:39:37.472Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\EventForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\EventForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\EventForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\EventForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:39:28.835Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReportForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\ReportForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\ReportForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\ReportForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\ReportForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:39:38.17Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KaiForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\KaiForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\KaiForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\KaiForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\KaiForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:39:15.508Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataModule.cs",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DataModule.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\DataModule.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DataModule.cs",
+              "RelativeToolTip": "Kaoordinate\\DataModule.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAkwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T07:47:49.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataModule.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DataModule.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\DataModule.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DataModule.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\DataModule.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:38:08.622Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KaiForm.cs",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\KaiForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\KaiForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\KaiForm.cs",
+              "RelativeToolTip": "Kaoordinate\\KaiForm.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T07:48:07.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\App.config",
+              "RelativeDocumentMoniker": "Kaoordinate\\App.config",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\App.config",
+              "RelativeToolTip": "Kaoordinate\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-11T07:48:29.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\MainForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\MainForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\MainForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:38:05.885Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\Program.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\Program.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\Program.cs",
+              "RelativeToolTip": "Kaoordinate\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T08:38:03.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\MainForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\MainForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\MainForm.cs",
+              "RelativeToolTip": "Kaoordinate\\MainForm.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwEkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T07:48:24.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DSKaioordinate.xsd",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DSKaioordinate.xsd",
+              "RelativeDocumentMoniker": "Kaoordinate\\DSKaioordinate.xsd",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\DSKaioordinate.xsd",
+              "RelativeToolTip": "Kaoordinate\\DSKaioordinate.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-09-11T08:00:57.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PrintForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\PrintForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\PrintForm.cs",
+              "ToolTip": "C:\\Temp\\Kaioordinate\\Kaoordinate\\PrintForm.cs [Design]",
+              "RelativeToolTip": "Kaoordinate\\PrintForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:38:05.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\MainForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\MainForm.cs",
+              "ToolTip": "C:\\Temp\\Kaoordinate\\Kaoordinate\\MainForm.cs [Design]",
+              "RelativeToolTip": "..\\Kaoordinate\\Kaoordinate\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:23:29.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PrintForm.cs [Design]",
+              "DocumentMoniker": "C:\\Temp\\Kaioordinate\\Kaoordinate\\PrintForm.cs",
+              "RelativeDocumentMoniker": "Kaoordinate\\PrintForm.cs",
+              "ToolTip": "C:\\Temp\\Kaoordinate\\Kaoordinate\\PrintForm.cs [Design]",
+              "RelativeToolTip": "..\\Kaoordinate\\Kaoordinate\\PrintForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T05:23:31.499Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
