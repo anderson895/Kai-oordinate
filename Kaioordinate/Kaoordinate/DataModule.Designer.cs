@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataModule));
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
+            this.ctnKaioordinate = new System.Data.OleDb.OleDbConnection();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbUpdateCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
             this.daEvent = new System.Data.OleDb.OleDbDataAdapter();
-            this.ctnKaioordinate = new System.Data.OleDb.OleDbConnection();
             this.oleDbSelectCommand2 = new System.Data.OleDb.OleDbCommand();
             this.oleDbInsertCommand2 = new System.Data.OleDb.OleDbCommand();
             this.oleDbUpdateCommand2 = new System.Data.OleDb.OleDbCommand();
@@ -64,6 +64,10 @@
             this.oleDbSelectCommand1.CommandText = "SELECT EventID, EventName, LocationID, EventDate\r\nFROM     EVENT\r\nORDER BY EventI" +
     "D";
             this.oleDbSelectCommand1.Connection = this.ctnKaioordinate;
+            // 
+            // ctnKaioordinate
+            // 
+            this.ctnKaioordinate.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Temp\\kai-oordinate.mdb";
             // 
             // oleDbInsertCommand1
             // 
@@ -115,10 +119,6 @@
                         new System.Data.Common.DataColumnMapping("LocationID", "LocationID"),
                         new System.Data.Common.DataColumnMapping("EventDate", "EventDate")})});
             this.daEvent.UpdateCommand = this.oleDbUpdateCommand1;
-            // 
-            // ctnKaioordinate
-            // 
-            this.ctnKaioordinate.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Temp\\kai-oordinate.mdb";
             // 
             // oleDbSelectCommand2
             // 
@@ -361,6 +361,7 @@
             // daWhanau
             // 
             this.daWhanau.DeleteCommand = this.oleDbDeleteCommand5;
+            this.daWhanau.FillLoadOption = System.Data.LoadOption.OverwriteChanges;
             this.daWhanau.InsertCommand = this.oleDbInsertCommand5;
             this.daWhanau.SelectCommand = this.oleDbSelectCommand5;
             this.daWhanau.TableMappings.AddRange(new System.Data.Common.DataTableMapping[] {
@@ -380,9 +381,10 @@
             // 
             // DataModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DataModule";
             this.Text = "DataModule";
             this.Load += new System.EventHandler(this.DataModule_Load);
@@ -418,7 +420,7 @@
         private System.Data.OleDb.OleDbCommand oleDbInsertCommand5;
         private System.Data.OleDb.OleDbCommand oleDbUpdateCommand5;
         private System.Data.OleDb.OleDbCommand oleDbDeleteCommand5;
-        private System.Data.OleDb.OleDbDataAdapter daWhanau;
         public DSKaioordinate dsKaioordinate;
+        private System.Data.OleDb.OleDbDataAdapter daWhanau;
     }
 }

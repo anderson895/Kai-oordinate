@@ -50,8 +50,25 @@ namespace Kaoordinate
 
         public void UpdateWhanau()
         {
-            OleDbCommandBuilder cb = new OleDbCommandBuilder(daWhanau);
-            daWhanau.Update(dtWhanau);
+            try
+            {
+                // Ensure primary key is set
+                if (dtWhanau.PrimaryKey.Length == 0)
+                    dtWhanau.PrimaryKey = new DataColumn[] { dtWhanau.Columns["WhanauID"] };
+
+                // Commit any pending edits from bound controls
+                if (BindingContext[dtWhanau] is CurrencyManager cm)
+                    cm.EndCurrentEdit();
+
+                // Generate commands automatically
+                OleDbCommandBuilder cb = new OleDbCommandBuilder(daWhanau);
+                daWhanau.Update(dtWhanau);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Update failed: " + ex.Message);
+            }
         }
+
     }
 }

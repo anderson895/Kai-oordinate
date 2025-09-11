@@ -142,5 +142,20 @@ namespace Kaoordinate
             btnReturn.Enabled = false;
             btnDelete.Enabled = false;
         }
+
+        private void btnSave_add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_update_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

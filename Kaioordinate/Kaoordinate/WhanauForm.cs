@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Kaoordinate
@@ -24,8 +19,26 @@ namespace Kaoordinate
             BindControls();
         }
 
+        public WhanauForm()
+        {
+            InitializeComponent();
+        }
+
+        private void WhanauForm_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(6, 73, 41);
+        }
+
+        // ================= BINDING ===================
         public void BindControls()
         {
+            txtWhanauID.DataBindings.Clear();
+            txtFirstName.DataBindings.Clear();
+            txtLastName.DataBindings.Clear();
+            txtEmail.DataBindings.Clear();
+            txtPhone.DataBindings.Clear();
+            txtWhanauAddress.DataBindings.Clear();
+
             txtWhanauID.DataBindings.Add("Text", DM.dtWhanau, "WhanauID");
             txtFirstName.DataBindings.Add("Text", DM.dtWhanau, "FirstName");
             txtLastName.DataBindings.Add("Text", DM.dtWhanau, "LastName");
@@ -39,22 +52,13 @@ namespace Kaoordinate
             }
 
             lstWhanau.DataSource = DM.dtWhanau;
-            lstWhanau.DisplayMember = "FullName"; 
+            lstWhanau.DisplayMember = "FullName";
             lstWhanau.ValueMember = "WhanauID";
 
             currencyManager = (CurrencyManager)this.BindingContext[DM.dtWhanau];
         }
 
-        public WhanauForm()
-        {
-            InitializeComponent();
-        }
-
-        private void WhanauForm_Load(object sender, EventArgs e)
-        {
-            this.BackColor = Color.FromArgb(6, 73, 41);
-        }
-
+        // ================= NAVIGATION ===================
         private void btnUp_Click(object sender, EventArgs e)
         {
             if (currencyManager.Position > 0)
@@ -76,6 +80,7 @@ namespace Kaoordinate
             Close();
         }
 
+        // ================= ADD ===================
         private void btnAdd_Click(object sender, EventArgs e)
         {
             lstWhanau.Visible = false;
@@ -85,29 +90,30 @@ namespace Kaoordinate
             btnUp.Enabled = false;
             btnDown.Enabled = false;
 
+            // Clear bindings to avoid overwriting current row
+            txtWhanauID.DataBindings.Clear();
+            txtFirstName.DataBindings.Clear();
+            txtLastName.DataBindings.Clear();
+            txtEmail.DataBindings.Clear();
+            txtPhone.DataBindings.Clear();
+            txtWhanauAddress.DataBindings.Clear();
+
+            // Clear inputs
+            txtWhanauID.Text = "";
             txtFirstName.Text = "";
             txtLastName.Text = "";
             txtEmail.Text = "";
             txtPhone.Text = "";
             txtWhanauAddress.Text = "";
 
-            //editable at enabled
-            txtFirstName.ReadOnly = false;
-            txtFirstName.Enabled = true;
+            // Enable editing
+            txtFirstName.ReadOnly = false; txtFirstName.Enabled = true;
+            txtLastName.ReadOnly = false; txtLastName.Enabled = true;
+            txtEmail.ReadOnly = false; txtEmail.Enabled = true;
+            txtPhone.ReadOnly = false; txtPhone.Enabled = true;
+            txtWhanauAddress.ReadOnly = false; txtWhanauAddress.Enabled = true;
 
-            txtLastName.ReadOnly = false;
-            txtLastName.Enabled = true;
-
-            txtEmail.ReadOnly = false;
-            txtEmail.Enabled = true;
-
-            txtPhone.ReadOnly = false;
-            txtPhone.Enabled = true;
-
-            txtWhanauAddress.ReadOnly = false;
-            txtWhanauAddress.Enabled = true;
-
-            //buttons
+            // Buttons
             btnSave_add.Visible = true;
             btnSave_update.Visible = false;
             btnCancel.Visible = true;
@@ -117,33 +123,59 @@ namespace Kaoordinate
             btnDelete.Enabled = false;
         }
 
+        private void btnSave_add_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtFirstName.Text) ||
+                    string.IsNullOrWhiteSpace(txtLastName.Text))
+                {
+                    MessageBox.Show("First Name and Last Name are required.", "Validation Error");
+                    return;
+                }
 
+                // Create new row
+                DataRow newWhanauRow = DM.dtWhanau.NewRow();
+                newWhanauRow["FirstName"] = txtFirstName.Text.Trim();
+                newWhanauRow["LastName"] = txtLastName.Text.Trim();
+                newWhanauRow["Email"] = txtEmail.Text.Trim();
+                newWhanauRow["Phone"] = txtPhone.Text.Trim();
+                newWhanauRow["Address"] = txtWhanauAddress.Text.Trim();
 
+                DM.dtWhanau.Rows.Add(newWhanauRow);
+                DM.UpdateWhanau();
+
+                MessageBox.Show("Whanau successfully added.", "Success");
+
+                // Rebind to refresh view
+                BindControls();
+
+                // Move to newly added row
+                int newIndex = DM.dtWhanau.Rows.IndexOf(newWhanauRow);
+                if (newIndex >= 0)
+                {
+                    currencyManager.Position = newIndex;
+                }
+
+                ResetFormState();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding Whanau: " + ex.Message, "Error");
+            }
+        }
+
+        // ================= UPDATE ===================
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-           
-
             btnUp.Enabled = false;
             btnDown.Enabled = false;
 
-            // Gawing pwede i-edit at enabled
-            txtFirstName.ReadOnly = false;
-            txtFirstName.Enabled = true;
-
-            txtLastName.ReadOnly = false;
-            txtLastName.Enabled = true;
-
-            txtEmail.ReadOnly = false;
-            txtEmail.Enabled = true;
-
-            txtPhone.ReadOnly = false;
-            txtPhone.Enabled = true;
-
-            txtWhanauAddress.ReadOnly = false;
-            txtWhanauAddress.Enabled = true;
-
-
-
+            txtFirstName.ReadOnly = false; txtFirstName.Enabled = true;
+            txtLastName.ReadOnly = false; txtLastName.Enabled = true;
+            txtEmail.ReadOnly = false; txtEmail.Enabled = true;
+            txtPhone.ReadOnly = false; txtPhone.Enabled = true;
+            txtWhanauAddress.ReadOnly = false; txtWhanauAddress.Enabled = true;
 
             btnSave_update.Visible = true;
             btnSave_add.Visible = false;
@@ -152,116 +184,37 @@ namespace Kaoordinate
             btnAdd.Enabled = false;
             btnReturn.Enabled = false;
             btnDelete.Enabled = false;
-
         }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            lstWhanau.Visible = true;
-            lblWhanauID.Visible = true;
-            txtWhanauID.Visible = true;
-
-            btnUp.Enabled = true;
-            btnDown.Enabled = true;
-
-            btnUpdate.Enabled = true;
-            btnReturn.Enabled = true;
-            btnAdd.Enabled = true;
-            btnDelete.Enabled = true;
-
-
-            
-            btnSave_add.Visible = false;
-            btnCancel.Visible = false;
-            btnSave_update.Visible = false;
-
-           
-            currencyManager.Refresh();
-        }
-
-        private void btnSave_add_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Create a new row in WHANAU table
-                DataRow newWhanauRow = DM.dtWhanau.NewRow();
-
-                // Fill in the values from your textboxes
-                newWhanauRow["FirstName"] = txtFirstName.Text;
-                newWhanauRow["LastName"] = txtLastName.Text;
-                newWhanauRow["Email"] = txtEmail.Text;
-                newWhanauRow["Phone"] = txtPhone.Text;
-                newWhanauRow["Address"] = txtWhanauAddress.Text;
-
-                // Add to the DataTable
-                DM.dtWhanau.Rows.Add(newWhanauRow);
-
-                // Push changes to the database
-                DM.UpdateWhanau();
-
-                MessageBox.Show("Whanau successfully added.", "Success");
-
-                // ✅ Reset form after successful save
-                txtFirstName.Clear();
-                txtLastName.Clear();
-                txtEmail.Clear();
-                txtPhone.Clear();
-                txtWhanauAddress.Clear();
-
-                // Optionally set focus back to first field
-                txtFirstName.Focus();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error adding Whanau: " + ex.Message, "Error");
-            }
-        }
-
-
 
         private void btnSave_update_Click(object sender, EventArgs e)
         {
             try
             {
-                int whanauID = int.Parse(txtWhanauID.Text);
+                if (lstWhanau.SelectedValue == null) return;
+
+                int whanauID = (int)lstWhanau.SelectedValue;
                 DataRow rowToUpdate = DM.dtWhanau.Rows.Find(whanauID);
 
                 if (rowToUpdate != null)
                 {
-                    // update values mula sa textboxes
-                    rowToUpdate["FirstName"] = txtFirstName.Text;
-                    rowToUpdate["LastName"] = txtLastName.Text;
-                    rowToUpdate["Email"] = txtEmail.Text;
-                    rowToUpdate["Phone"] = txtPhone.Text;
-                    rowToUpdate["Address"] = txtWhanauAddress.Text;
+                    rowToUpdate["FirstName"] = txtFirstName.Text.Trim();
+                    rowToUpdate["LastName"] = txtLastName.Text.Trim();
+                    rowToUpdate["Email"] = txtEmail.Text.Trim();
+                    rowToUpdate["Phone"] = txtPhone.Text.Trim();
+                    rowToUpdate["Address"] = txtWhanauAddress.Text.Trim();
 
-                    // push to database
+                    // Commit any pending edits
+                    if (BindingContext[DM.dtWhanau] is CurrencyManager cm)
+                        cm.EndCurrentEdit();
+
                     DM.UpdateWhanau();
 
                     MessageBox.Show("Whanau successfully updated.", "Success");
-
-                    // reset form state (same as cancel)
-                    lstWhanau.Visible = true;
-                    lblWhanauID.Visible = true;
-                    txtWhanauID.Visible = true;
-
-                    btnUp.Enabled = true;
-                    btnDown.Enabled = true;
-                    btnUpdate.Enabled = true;
-                    btnReturn.Enabled = true;
-                    btnAdd.Enabled = true;
-                    btnDelete.Enabled = true;
-
-                    btnSave_add.Visible = false;
-                    btnCancel.Visible = false;
-                    btnSave_update.Visible = false;
-
-                    // refresh binding
-                    currencyManager.Refresh();
+                    ResetFormState();
                 }
                 else
                 {
-                    MessageBox.Show("Whanau ID not found.", "Error");
+                    MessageBox.Show("Selected Whanau not found.", "Error");
                 }
             }
             catch (Exception ex)
@@ -270,6 +223,9 @@ namespace Kaoordinate
             }
         }
 
+
+
+        // ================= DELETE ===================
         private void btnDelete_Click(object sender, EventArgs e)
         {
             try
@@ -295,5 +251,36 @@ namespace Kaoordinate
             }
         }
 
+        // ================= CANCEL / RESET ===================
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            ResetFormState();
+        }
+
+        private void ResetFormState()
+        {
+            lstWhanau.Visible = true;
+            lblWhanauID.Visible = true;
+            txtWhanauID.Visible = true;
+
+            btnUp.Enabled = true;
+            btnDown.Enabled = true;
+            btnUpdate.Enabled = true;
+            btnReturn.Enabled = true;
+            btnAdd.Enabled = true;
+            btnDelete.Enabled = true;
+
+            txtFirstName.ReadOnly = true; txtFirstName.Enabled = false;
+            txtLastName.ReadOnly = true; txtLastName.Enabled = false;
+            txtEmail.ReadOnly = true; txtEmail.Enabled = false;
+            txtPhone.ReadOnly = true; txtPhone.Enabled = false;
+            txtWhanauAddress.ReadOnly = true; txtWhanauAddress.Enabled = false;
+
+            btnSave_add.Visible = false;
+            btnCancel.Visible = false;
+            btnSave_update.Visible = false;
+
+            currencyManager.Refresh();
+        }
     }
 }
