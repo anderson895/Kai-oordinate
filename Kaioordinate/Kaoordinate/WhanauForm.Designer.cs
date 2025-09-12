@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WhanauForm));
             this.txtWhanauAddress = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -124,7 +125,6 @@
             this.txtWhanauID.ReadOnly = true;
             this.txtWhanauID.Size = new System.Drawing.Size(164, 28);
             this.txtWhanauID.TabIndex = 32;
-            this.txtWhanauID.Visible = false;
             // 
             // btnReturn
             // 
@@ -372,6 +372,7 @@
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblWhanauID);
             this.Controls.Add(this.lstWhanau);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "WhanauForm";
             this.Text = "Whānau Maintenance";

@@ -114,5 +114,24 @@ namespace Kaoordinate
             }
         }
 
+
+
+        public void UpdateEventRegistration()
+        {
+            try
+            {
+                if (BindingContext[dtEventRegistration] is CurrencyManager cm)
+                    cm.EndCurrentEdit();
+
+                OleDbCommandBuilder cb = new OleDbCommandBuilder(daEventRegistration);
+                daEventRegistration.Update(dtEventRegistration);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("EventRegistration update failed: " + ex.Message);
+            }
+        }
+
+
     }
 }

@@ -40,10 +40,7 @@ namespace Kaoordinate
             frmEvent.ShowDialog();
         }
 
-        private void iconButton6_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnKai_Click(object sender, EventArgs e)
         {
@@ -75,6 +72,24 @@ namespace Kaoordinate
                 frmWhanau = new WhanauForm(DM, this);
             }
             frmWhanau.ShowDialog();
+        }
+
+        private void btnRegistration_Click(object sender, EventArgs e)
+        {
+            if (frmRegister == null)
+            {
+                frmRegister = new RegisterForm(DM, this);
+            }
+            frmRegister.ShowDialog();
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            if (frmReport == null)
+            {
+                frmReport = new ReportForm(DM, this);
+            }
+            frmReport.ShowDialog();
         }
     }
 }

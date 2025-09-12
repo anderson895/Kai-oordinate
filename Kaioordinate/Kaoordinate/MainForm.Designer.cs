@@ -43,9 +43,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(58, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(763, 161);
+            this.pictureBox1.Size = new System.Drawing.Size(572, 131);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -57,9 +58,10 @@
             this.btnKai.IconColor = System.Drawing.Color.Black;
             this.btnKai.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnKai.IconSize = 80;
-            this.btnKai.Location = new System.Drawing.Point(58, 207);
+            this.btnKai.Location = new System.Drawing.Point(44, 168);
+            this.btnKai.Margin = new System.Windows.Forms.Padding(2);
             this.btnKai.Name = "btnKai";
-            this.btnKai.Size = new System.Drawing.Size(177, 142);
+            this.btnKai.Size = new System.Drawing.Size(133, 115);
             this.btnKai.TabIndex = 1;
             this.btnKai.Text = "KAI";
             this.btnKai.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -73,9 +75,10 @@
             this.btnEvents.IconColor = System.Drawing.Color.Black;
             this.btnEvents.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEvents.IconSize = 80;
-            this.btnEvents.Location = new System.Drawing.Point(252, 207);
+            this.btnEvents.Location = new System.Drawing.Point(189, 168);
+            this.btnEvents.Margin = new System.Windows.Forms.Padding(2);
             this.btnEvents.Name = "btnEvents";
-            this.btnEvents.Size = new System.Drawing.Size(177, 142);
+            this.btnEvents.Size = new System.Drawing.Size(133, 115);
             this.btnEvents.TabIndex = 2;
             this.btnEvents.Text = "EVENTS";
             this.btnEvents.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -89,9 +92,10 @@
             this.btnLocation.IconColor = System.Drawing.Color.Black;
             this.btnLocation.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLocation.IconSize = 80;
-            this.btnLocation.Location = new System.Drawing.Point(644, 207);
+            this.btnLocation.Location = new System.Drawing.Point(483, 168);
+            this.btnLocation.Margin = new System.Windows.Forms.Padding(2);
             this.btnLocation.Name = "btnLocation";
-            this.btnLocation.Size = new System.Drawing.Size(177, 142);
+            this.btnLocation.Size = new System.Drawing.Size(133, 115);
             this.btnLocation.TabIndex = 3;
             this.btnLocation.Text = "LOCATION";
             this.btnLocation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -105,9 +109,10 @@
             this.btnWhanau.IconColor = System.Drawing.Color.Black;
             this.btnWhanau.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnWhanau.IconSize = 80;
-            this.btnWhanau.Location = new System.Drawing.Point(451, 207);
+            this.btnWhanau.Location = new System.Drawing.Point(338, 168);
+            this.btnWhanau.Margin = new System.Windows.Forms.Padding(2);
             this.btnWhanau.Name = "btnWhanau";
-            this.btnWhanau.Size = new System.Drawing.Size(177, 142);
+            this.btnWhanau.Size = new System.Drawing.Size(133, 115);
             this.btnWhanau.TabIndex = 4;
             this.btnWhanau.Text = "WHĀNAU";
             this.btnWhanau.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -121,13 +126,15 @@
             this.btnRegistration.IconColor = System.Drawing.Color.Black;
             this.btnRegistration.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRegistration.IconSize = 80;
-            this.btnRegistration.Location = new System.Drawing.Point(58, 373);
+            this.btnRegistration.Location = new System.Drawing.Point(44, 303);
+            this.btnRegistration.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistration.Name = "btnRegistration";
-            this.btnRegistration.Size = new System.Drawing.Size(177, 142);
+            this.btnRegistration.Size = new System.Drawing.Size(133, 115);
             this.btnRegistration.TabIndex = 5;
             this.btnRegistration.Text = "REGISTRATION";
             this.btnRegistration.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRegistration.UseVisualStyleBackColor = true;
+            this.btnRegistration.Click += new System.EventHandler(this.btnRegistration_Click);
             // 
             // btnReport
             // 
@@ -136,14 +143,15 @@
             this.btnReport.IconColor = System.Drawing.Color.Black;
             this.btnReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnReport.IconSize = 80;
-            this.btnReport.Location = new System.Drawing.Point(252, 373);
+            this.btnReport.Location = new System.Drawing.Point(189, 303);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(177, 142);
+            this.btnReport.Size = new System.Drawing.Size(133, 115);
             this.btnReport.TabIndex = 6;
             this.btnReport.Text = "REPORT";
             this.btnReport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.iconButton6_Click);
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnExit
             // 
@@ -152,9 +160,10 @@
             this.btnExit.IconColor = System.Drawing.Color.Black;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 70;
-            this.btnExit.Location = new System.Drawing.Point(644, 373);
+            this.btnExit.Location = new System.Drawing.Point(483, 303);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(177, 142);
+            this.btnExit.Size = new System.Drawing.Size(133, 115);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "EXIT";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -163,10 +172,10 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(879, 551);
+            this.ClientSize = new System.Drawing.Size(659, 448);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnRegistration);
@@ -176,6 +185,7 @@
             this.Controls.Add(this.btnKai);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Kaioordinate - Community Event Management Software";
             this.Load += new System.EventHandler(this.MainForm_Load);
