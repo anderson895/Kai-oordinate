@@ -313,7 +313,7 @@
             // 
             // btnSave_add
             // 
-            this.btnSave_add.Location = new System.Drawing.Point(434, 259);
+            this.btnSave_add.Location = new System.Drawing.Point(477, 259);
             this.btnSave_add.Name = "btnSave_add";
             this.btnSave_add.Size = new System.Drawing.Size(118, 23);
             this.btnSave_add.TabIndex = 38;
@@ -324,7 +324,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(566, 259);
+            this.btnCancel.Location = new System.Drawing.Point(609, 259);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 39;
@@ -335,7 +335,7 @@
             // 
             // btnSave_update
             // 
-            this.btnSave_update.Location = new System.Drawing.Point(434, 259);
+            this.btnSave_update.Location = new System.Drawing.Point(477, 259);
             this.btnSave_update.Name = "btnSave_update";
             this.btnSave_update.Size = new System.Drawing.Size(118, 23);
             this.btnSave_update.TabIndex = 40;

@@ -12,7 +12,7 @@ namespace Kaoordinate
         private MainForm mainForm;
 
         private PrintDocument printDoc;
-        private int selectedEventID = -1; // only print this event
+        private int selectedEventID = -1; 
 
         public ReportForm(DataModule dm, MainForm mnu)
         {
@@ -33,8 +33,8 @@ namespace Kaoordinate
 
             // Bind event table to combo box
             cboEvents.DataSource = DM.dtEvent;
-            cboEvents.DisplayMember = "EventName";   // what shows in dropdown
-            cboEvents.ValueMember = "EventID";       // the actual ID behind it
+            cboEvents.DisplayMember = "EventName";   
+            cboEvents.ValueMember = "EventID";      
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace Kaoordinate
                 }
             }
 
-            e.HasMorePages = false; // only one event
+            e.HasMorePages = false; 
         }
     }
 }
