@@ -38,6 +38,8 @@ namespace Kaoordinate
 
             // Event Registration Grid (all data initially)
             dgvEventRegistered.DataSource = DM.dtEventRegistration;
+
+            currencyManager = (CurrencyManager)this.BindingContext[DM.dtEventRegistration];
         }
 
         private void dgvEvents_SelectionChanged(object sender, EventArgs e)
@@ -84,6 +86,9 @@ namespace Kaoordinate
             DM.UpdateEventRegistration();
 
             MessageBox.Show("Entry added successfully");
+
+            if (BindingContext[DM.dtEventRegistration] is CurrencyManager cm)
+                cm.EndCurrentEdit();
         }
 
 

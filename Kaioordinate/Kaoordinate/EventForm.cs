@@ -230,25 +230,29 @@ namespace Kaoordinate
                         return;
                     }
 
-                    int locationID = Convert.ToInt32(cmbLocation.SelectedValue);
-
-                    // Debug: Show IDs
-                    //MessageBox.Show($"Updating EventID: {eventID}\nNew LocationID: {locationID}");
-
-                    // Update DataRow
+                    // Update DataRow fields
                     rowToUpdate["EventName"] = txtEventName.Text.Trim();
-                    rowToUpdate["LocationID"] = locationID;
+                    rowToUpdate["LocationID"] = Convert.ToInt32(cmbLocation.SelectedValue);
                     rowToUpdate["EventDate"] = dtpEventDate.Value;
 
-                    // Commit the change manually
+                    // ✅ Commit the edit before updating database
+                    if (BindingContext[DM.dtEvent] is CurrencyManager cm)
+                    {
+                        cm.EndCurrentEdit();
+                    }
+
+                    // Push changes to database
                     DM.UpdateEvent();
 
                     MessageBox.Show("Event updated successfully.", "Success");
 
-                    // Refresh ComboBox selection
+                    // Refresh UI
                     LstEvent_SelectedIndexChanged(null, null);
-
                     ResetFormState();
+                }
+                else
+                {
+                    MessageBox.Show("Selected Event not found.", "Error");
                 }
             }
             catch (Exception ex)
@@ -256,6 +260,7 @@ namespace Kaoordinate
                 MessageBox.Show("Error updating Event: " + ex.Message, "Error");
             }
         }
+
 
 
 

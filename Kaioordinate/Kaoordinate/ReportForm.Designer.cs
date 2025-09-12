@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportForm));
             this.cboEvents = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnReturn = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // cboEvents
@@ -52,15 +53,33 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnPrint_Click);
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.btnReturn.IconColor = System.Drawing.Color.Black;
+            this.btnReturn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnReturn.IconSize = 80;
+            this.btnReturn.Location = new System.Drawing.Point(494, 257);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(95, 98);
+            this.btnReturn.TabIndex = 13;
+            this.btnReturn.Text = "RETURN";
+            this.btnReturn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
             // ReportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cboEvents);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ReportForm";
             this.Text = "Report Preview";
             this.ResumeLayout(false);
@@ -71,5 +90,6 @@
 
         private System.Windows.Forms.ComboBox cboEvents;
         private System.Windows.Forms.Button button1;
+        private FontAwesome.Sharp.IconButton btnReturn;
     }
 }

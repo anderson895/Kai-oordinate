@@ -144,6 +144,7 @@ namespace Kaoordinate
             btnSave_update.Visible = true;
             btnSave_add.Visible = false;
             btnCancel.Visible = true;
+            lstLocation.Visible = false;
 
             btnAdd.Enabled = false;
             btnReturn.Enabled = false;

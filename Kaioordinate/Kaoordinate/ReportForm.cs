@@ -126,5 +126,10 @@ namespace Kaoordinate
 
             e.HasMorePages = false; 
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
